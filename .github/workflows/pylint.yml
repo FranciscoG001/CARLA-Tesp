@@ -28,5 +28,3 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
-        pylint: disable=line-too-long
-        pylint: diasble=import-error
