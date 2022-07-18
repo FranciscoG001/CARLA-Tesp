@@ -2,6 +2,7 @@
 # pyright: reportMissingImports=false
 # ignore carla codigo de cima
 # pylint: disable=wrong-import-position
+# pylint: disable=line-too-long
 # posiçao do import do carla
 # pylint: disable=superfluous-parens
 # pylint: disable=too-many-lines
