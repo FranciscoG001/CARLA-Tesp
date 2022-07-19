@@ -28,6 +28,10 @@ jobs:
     - name: Python version
       run: |
         python3.7 --version
+    - name: pygame
+      run: |
+        sudo apt install python3.7-distutils
+        python3.7 -m pip install -U pygame==1.9.6 --user
     - name: unit test
       run: |
         python3.7 -m unittest unit_test.py
