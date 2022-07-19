@@ -1,6 +1,5 @@
 import dre2
 import unittest
-import pygame
 
 class TestTextColor(unittest.TestCase):
     """Test"""
