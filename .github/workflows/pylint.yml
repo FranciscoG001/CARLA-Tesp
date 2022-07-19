@@ -30,7 +30,7 @@ jobs:
         python3.7 --version
     - name: unit test
       run: |
-        python ${{ env.DEVOPS_DIR }}/UnitTestdre2.py
+        python ${{ env.DEVOPS_DIR }}/unit_test.py
       shell: sh
     - name: Analysing the code with pylint
       run: |
