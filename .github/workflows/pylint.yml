@@ -21,6 +21,7 @@ jobs:
     - uses: jannekem/run-python-script-action@v1
       with:
         script: |
+          import unittest
           python -m unittest UnitTestdre2.py
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
