@@ -28,13 +28,6 @@ jobs:
     - name: Python version
       run: |
         python3.7 --version
-    - name: Test color
-      uses: dorny/test-reporter@v1
-      with:
-        name: Unittest
-        path: "**/UnitTestdre2.py"
-        reporter: dotnet-trx
-        fail-on-error: true
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
