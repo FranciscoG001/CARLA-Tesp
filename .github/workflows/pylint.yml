@@ -30,7 +30,7 @@ jobs:
         python3.7 --version
     - name: unit test
       run: |
-        python3.7 unit_test.py
+        python3.7 -m unittest unit_test.py
       shell: sh
     - name: Analysing the code with pylint
       run: |
