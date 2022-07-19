@@ -30,7 +30,7 @@ jobs:
         python3.7 --version
     - name: unittest
       run: |
-        python3.7 -m unittest ~/.github/workflows/UnitTestdre2.py
+        python3.7 -m unittest .github/workflows/UnitTestdre2.py
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
