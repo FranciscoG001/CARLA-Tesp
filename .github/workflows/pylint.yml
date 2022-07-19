@@ -28,6 +28,10 @@ jobs:
     - name: Python version
       run: |
         python3.7 --version
+    - name: unit test
+      run: |
+        python ${{ env.DEVOPS_DIR }}/UnitTestdre2.py
+      shell: sh
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
