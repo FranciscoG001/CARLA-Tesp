@@ -28,6 +28,9 @@ jobs:
     - name: Python version
       run: |
         python3.7 --version
+    - name: Color Text Test
+      run: |
+        python3.7 -m unittest UnitTestdre2.py
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
