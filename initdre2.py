@@ -24,7 +24,7 @@ def okfiles():
     checkfiles = False
     root=tk.Tk()
     while not checkfiles:
-        file = select_files()
+        file = ('/ZIP/SimulationDataCar2022-07-15_09:40:20.zip',)#select_files()
         checkfilenames = [file[0]]
         checkfileexts = ['.zip']
         if len(file) == 1:
