@@ -36,9 +36,10 @@ jobs:
         python3.7 -m pip install -U pandas --user
     - name: tkinter
       run: |
-        pip install python-tk
+        pip install tk
     - name: unit test
       run: |
+        import tkinter as tk
         python3.7 -m unittest unit_test.py
       shell: sh
     - name: Analysing the code with pylint
