@@ -39,8 +39,7 @@ jobs:
         pip install tk
     - name: unit test
       run: |
-        import tkinter as tk
-        python3.7 -m unittest unit_test.py
+        python unit_test.py
       shell: sh
     - name: Analysing the code with pylint
       run: |
