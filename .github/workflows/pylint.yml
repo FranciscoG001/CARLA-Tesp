@@ -39,7 +39,7 @@ jobs:
         pip install tk
     - name: unit test
       run: |
-        python unit_test.py
+        python3.7 -m unittest unit_test.py
       shell: sh
     - name: Analysing the code with pylint
       run: |
