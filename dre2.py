@@ -6,6 +6,7 @@ from initdre2 import image1, image2, center_origin, center_origin2, data1input, 
 from funcdre2 import screenfill, rightleftclickordrawagain, drawcar, drawpath, textmult, screendistance, infocar1, infocar2, infoscreen, forplay, distancemouseclick, playspeed, textchangespeedmodplay
 from funcdre2 import screen, textstop
 from funcdre2 import color, font, textinfcar1, textinfcar2, textinfocontroltick, textchangetickvalue, textmode, textplay
+from unit_test import TestTextColor
 
 # Keypress dentro do for pygame.event.get() so avaça mais um mesmo que a tecla continue precionada
 # Keypress fora do for avança muitos valores de uma vez
@@ -152,3 +153,5 @@ def loop():
 
 if __name__ == '__main__':
     loop()
+    test = TestTextColor()
+    test.testtextcolor()
