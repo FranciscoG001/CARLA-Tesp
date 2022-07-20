@@ -36,7 +36,7 @@ jobs:
         python3.7 -m pip install -U pandas --user
     - name: tkinter
       run: |
-        pip install tk
+        apt-get install python-tk
     - name: unit test
       run: |
         python3.7 -m unittest unit_test.py
