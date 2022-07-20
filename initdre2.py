@@ -97,7 +97,7 @@ def centerimages(screenin):
 
 #Main
 
-FILESLIST = okfiles()
+FILESLIST = ['tmp/DadosCarro86_2022-07-15_09:41:32.xlsx', 'tmp/DadosCarro87_2022-07-15_09:41:32.xlsx']
 
 # Verificar se o zip é o correto(no caso de ser outro zip, zip so com um excel, zip sem excel)
 AGAIN = True
