@@ -1,4 +1,4 @@
-import dre2
+from dre2 import color
 import unittest
 
 class TestTextColor(unittest.TestCase):
@@ -6,5 +6,9 @@ class TestTextColor(unittest.TestCase):
 
     def testtextcolor(self):
         """Test"""
-        resultcolor = dre2.color
+        resultcolor = color
         self.assertEqual(resultcolor, (255, 0, 0))
+
+if __name__ == "__main__":
+    test = TestTextColor()
+    test.testtextcolor()
