@@ -1,5 +1,6 @@
-from dre2 import data1input, data2input
+"""Unit test"""
 import unittest
+from dre2 import data1input, data2input
 
 class TestDic(unittest.TestCase):
     """Test"""
