@@ -46,4 +46,4 @@ jobs:
       shell: sh
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint -d C0303 $(git ls-files '*.py')
