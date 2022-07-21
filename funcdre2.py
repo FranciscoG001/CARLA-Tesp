@@ -144,7 +144,20 @@ def screenfill(screenin):
     """Clear screen"""
     screenin.fill((0,0,0))
 
-pygame.init()
-screen = pygame.display.set_mode([1280, 720], 0, 32)
-color, font = pygamestringstyles()
-textmode, textinfcar1, textinfcar2, textinfocontroltick, textchangetickvalue, textplay, textstop = textonscreen(color, font)
+
+screen = None
+color = None
+font = None
+textmode= None 
+textinfcar1= None 
+textinfcar2= None 
+textinfocontroltick= None 
+textchangetickvalue= None 
+textplay= None 
+textstop= None
+
+if __name__ == '__main__':
+    pygame.init()
+    screen = pygame.display.set_mode([1280, 720], 0, 32)
+    color, font = pygamestringstyles()
+    textmode, textinfcar1, textinfcar2, textinfocontroltick, textchangetickvalue, textplay, textstop = textonscreen(color, font)

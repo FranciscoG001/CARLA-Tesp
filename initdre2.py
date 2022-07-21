@@ -82,26 +82,38 @@ def centerimages(screenin):
 
 #Main
 
-FILESLIST = okfiles()
+image1 = None
+image2 = None
+center_origin = None
+center_origin2 = None
+data1input = None
+data2input = None
+FILESLIST = ['ZIP/DadosCarro86_2022-07-15_09:41:32.xlsx','ZIP/DadosCarro87_2022-07-15_09:41:32.xlsx']
+data1input = readfile(FILESLIST[0])
+data2input = readfile(FILESLIST[1])
 
-# Verificar se o zip é o correto(no caso de ser outro zip, zip so com um excel, zip sem excel)
-AGAIN = True
-while AGAIN is True:
-    try:
-        data1input = readfile(FILESLIST[0])
-        data2input = readfile(FILESLIST[1])
-        AGAIN = False
-        pygame.init()
-        screen = pygame.display.set_mode([1280, 720], 0, 32)
-    except IndexError: #so except
-        AGAIN = True
-        root1=tk.Tk()
-        showinfo(
-                title='Selected Files',
-                message="Choose correct ZIP file!!"
-            )
-        root1.destroy()
-        FILESLIST = okfiles()
+if __name__ == '__main__':
 
-image1, image2 = readimages()
-center_origin, center_origin2 = centerimages(screen)
+    FILESLIST = ['ZIP/DadosCarro86_2022-07-15_09:41:32.xlsx','ZIP/DadosCarro87_2022-07-15_09:41:32.xlsx'] #okfiles()
+
+    # Verificar se o zip é o correto(no caso de ser outro zip, zip so com um excel, zip sem excel)
+    AGAIN = True
+    while AGAIN is True:
+        try:
+            data1input = readfile(FILESLIST[0])
+            data2input = readfile(FILESLIST[1])
+            AGAIN = False
+            pygame.init()
+            screen = pygame.display.set_mode([1280, 720], 0, 32)
+        except IndexError: #so except
+            AGAIN = True
+            root1=tk.Tk()
+            showinfo(
+                    title='Selected Files',
+                    message="Choose correct ZIP file!!"
+                )
+            root1.destroy()
+            FILESLIST = okfiles()
+
+    image1, image2 = readimages()
+    center_origin, center_origin2 = centerimages(screen)
